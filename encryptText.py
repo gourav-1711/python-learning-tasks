@@ -20,3 +20,15 @@ for letter in text:
 
 print(f"YOUR MESSAGE : {text}")
 print(f"ENCRYPTED : {encrypted}") 
+
+print("****************************")
+print("FIND A ENCRYPTED TEXT")
+
+findText = input()
+normal = ""
+
+for char in findText:
+    index = keys.index(char)
+    normal += chars[index]
+
+print(f"YOUR NORMAL TEXT WAS : {normal}")
